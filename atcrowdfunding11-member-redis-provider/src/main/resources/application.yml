@@ -1,0 +1,10 @@
+#docker exec -it redis redis-cli
+server:
+  port: 3000
+  
+spring:  application:    name: com-crowd-redis
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka

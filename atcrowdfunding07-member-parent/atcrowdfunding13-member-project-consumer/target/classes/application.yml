@@ -1,0 +1,24 @@
+server:
+  port: 5000
+
+spring:  application:    name: edu-crowd-project
+  redis:
+    host: 127.0.0.1
+  session:
+    store-type: redis
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+      
+aliyun: 
+  oss: 
+    access-key-id: LTAI4GLAoqcGxxHxMRGXTMhP
+    access-key-secret: 2CcmBzdZPqzdJsvvgeFTwIv0hoADz2
+    bucket-domain: http://wyg2020.oss-cn-beijing.aliyuncs.com
+    bucket-name: wyg2020
+    end-point: http://oss-cn-beijing.aliyuncs.com
